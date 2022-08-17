@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Propiedades</title>
+</head>
+<body>
+    <ol>
+        <li th:each="property : ${properties}" th:text="${property.getTitle()}"> </li>
+    </ol>
+</body>
+</html>
